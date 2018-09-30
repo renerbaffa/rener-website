@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './About.css'
 
-class About extends Component {
-  render() {
-    return (
-      <div className="about">
-        <h1>
-          Edit About component or pages/about.jsx to include your information.
-        </h1>
+const About = () => (
+  <div className="about">
+    <h1>
+      Edit About component or pages/about.jsx to include your information. About
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div>Rener</div>
+        <div style={{ color: 'red' }}>❤</div>
+        <div>Fran & Maggie</div>
       </div>
-    )
-  }
-}
+    </h1>
+  </div>
+)
 
 export default About
