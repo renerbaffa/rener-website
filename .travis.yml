@@ -1,24 +1,25 @@
 language: node_js
-node_js:
-  - "stable"
 cache:
   directories:
-    - node_modules
-branches:
-  only:
-    - develop
+    - ~/.npm
+notifications:
+  email:
+    recipients:
+      - renerbaffa@gmail.com
+    on_success: always
+    on_failure: always
+node_js:
+  - "9"
+git:
+  depth: 3
+script:
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: public
   keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
   on:
-    branch: master
-before_script:
-  - "npm i -g gatsby"
-  - "npm i --quiet"
-# script:
-# - "npm run test"
-after_success:
-  - "npm run build:gh"
+    branch: develop
