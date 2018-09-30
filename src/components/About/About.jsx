@@ -5,7 +5,13 @@ const About = () => (
   <div className="about">
     <h1>
       Edit About component or pages/about.jsx to include your information. About
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'center',
+        }}
+      >
         <div>Rener</div>
         <div style={{ color: 'red' }}>❤</div>
         <div>Fran & Maggie</div>
