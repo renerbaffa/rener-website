@@ -1,0 +1,16 @@
+{
+  "window.zoomLevel": 0,
+  // "editor.renderWhitespace": "boundary",
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+  "prettier.eslintIntegration": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.formatOnSave": true,
+  // Enable per-language
+  "[javascript]": {
+      "editor.formatOnSave": true,
+  }
+
+  //"eslint.autoFixOnSave": true,
+  //"editor.formatOnSave": true,
+}
