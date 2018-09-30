@@ -17,7 +17,7 @@ deploy:
     branch: master
 before_script:
   - "npm i -g gatsby"
-  - "npm i"
+  - "npm i --quiet"
 # script:
 # - "npm run test"
 after_success:
