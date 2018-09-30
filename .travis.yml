@@ -6,7 +6,7 @@ cache:
     - node_modules
 branches:
   only:
-    - development
+    - develop
 deploy:
   provider: pages
   skip-cleanup: true
@@ -18,7 +18,7 @@ deploy:
 before_script:
   - "npm i -g gatsby"
   - "npm i"
-script:
-  - "npm run test"
+# script:
+# - "npm run test"
 after_success:
   - "npm run build:gh"
