@@ -22,4 +22,5 @@ deploy:
   local-dir: public
   target-branch: master
   on:
-    branch: develop
+    tags: true
+    # branch: develop
