@@ -52,7 +52,7 @@ build/Release
 
 
 # Build Files
-# public/
+public/
 .cache/
 
 # Gatsby context
