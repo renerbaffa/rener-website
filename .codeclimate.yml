@@ -6,17 +6,23 @@ plugins:
     channel: "eslint-4"
     config:
       config: .eslintrc.json
+  csslint:
+    enabled: true
 
 checks:
   method-complexity:
-    enabled: false
+    enabled: true
   method-lines:
     config:
       threshold: 150
   similar-code:
     enabled: false
   identical-code:
-    enabled: false
+    enabled: true
+  argument-count:
+    enabled: true
+  complex-logic:
+    enabled: true
 
 ratings:
   paths:
