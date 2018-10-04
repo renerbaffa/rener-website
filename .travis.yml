@@ -12,10 +12,8 @@ node_js:
   - "9"
 git:
   depth: 3
-install:
-  - npm install -g codecov
 script:
-  - npm run test && codecov
+  - npm run test && npm run codecov
   - npm run build
 deploy:
   provider: pages

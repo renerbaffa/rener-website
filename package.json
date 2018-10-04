@@ -82,7 +82,8 @@
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "jest": "jest",
-    "test": "jest --no-cache --coverage"
+    "test": "jest --no-cache --coverage",
+    "codecov": "npm run codecov"
   },
   "remarkConfig": {
     "plugins": [
