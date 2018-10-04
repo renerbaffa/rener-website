@@ -6,7 +6,6 @@
   "dependencies": {
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "codecov": "^3.1.0",
     "gatsby": "2.0.0",
     "gatsby-image": "2.0.0",
     "gatsby-plugin-catch-links": "2.0.2",
@@ -46,6 +45,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "cli-glob": "^0.1.0",
+    "codecov": "^3.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -83,7 +83,7 @@
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "jest": "jest",
     "test": "jest --no-cache --coverage",
-    "codecov": "npm run codecov"
+    "codecov": "codecov"
   },
   "remarkConfig": {
     "plugins": [

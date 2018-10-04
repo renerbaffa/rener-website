@@ -24,4 +24,3 @@ deploy:
   target-branch: master
   on:
     tags: true
-    # branch: develop
