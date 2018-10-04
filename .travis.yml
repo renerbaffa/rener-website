@@ -2,10 +2,6 @@ language: node_js
 cache:
   directories:
     - ~/.npm
-addons:
-  code_climate:
-    repo_token:
-      secure: "M7nlV6mtRoXzoWf2qAq8Fktuw/Z/y9Ht1JH7BVFQF8dbG0wvASFtle6yctNK0M6fTl6M4BEpCEiS3sXrX9nz+a5MxgkWd88zz/svR2jFG7dX8ziaXXCcGOA91oRVSXKeS3kI0hYU7JhHFaDj+krlOwqsO5jfeothuvoj9vVOoGJ+F/T8TzcriJ2UZJy5/E4Au8IOe7X7ADrZ33xyvMBKf1B2wUAQFLt+eDS4sirD1PjuueztCu0477MXJu2yyInMfI4na7nlKbDVALYa64EeNaTk+z8gDI/hcuxuDIKq7tECtvLy3gq3z8/+CQQ800fjnWp7YvU3nbV6ujIahKqL2NbjyVrN8sDMw2gwlhx9RM8YIP9yF9X3wspmoYApbOaNZ80jHqMGKb/D2lYys8AaC4337Z/U494bsLSgSDfXCjLtwnCXXk0N2DD+g0QDTeyP+uQ1Y0dnYI8Updie1JeAwgf3SvkqbbJPAPo1v2uftJG+OO0Z8R/AkhWTYJSZdw4SQRPHhYr9lyLJGjwe70lRs7YujjGBAfh+7dm0ARuxxdU+EWvBfBAk5xleyWF8AlEkkoU9rmMhz5T1/Ow1EjBAW1cRr6TmaH1VkUdBMczZjdLpVPvNbrvUF+ksFOollY15baA+I5NGrdzRT2+bLuj6YExM6BXtY0h0hAD3GvGtYAo="
 notifications:
   email:
     recipients:
@@ -17,10 +13,8 @@ node_js:
 git:
   depth: 3
 script:
-  - npm run test
+  - npm run test && npm run codecov
   - npm run build
-after_script:
-  - codeclimate-test-reporter < ./coverage/lcov.info
 deploy:
   provider: pages
   skip-cleanup: true
